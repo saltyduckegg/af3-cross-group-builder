@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link rel="stylesheet" href="/styles.css">
+        <script src="/client.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>AlphaFold3 多重序列组合生成器</h1>
+            <p>排列组合蛋白质和DNA序列，生成AlphaFold3 JSON文件</p>
+        </header>
+        <main>
+            <div class="group-contral">
+                <div>
+                    <label>比较组数:</label>
+                </div>
+                <div>
+                    <p id="group-num" >5</p>
+                </div>
+                <div>
+                    <button id="add-group-btn">+</button>
+                </div>
+                <div>
+                    <button  id="remove-group-btn" >-</button>
+                </div>
+            </div>
+            <div class="main-container" id="main-container">
+                <div class="group-container">
+                    <div >
+                        <h2>组1</h2>
+                        <div class="group-detail-container">
+                            <div>
+                                <label>比较组数:</label>
+                            </div>
+                            <div>
+                                <p >5</p>
+                            </div>
+                            <div>
+                                <button  >+</button>
+                            </div>
+                            <div>
+                                <button i>-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-container-down">
+                        <div class="group-container-single">
+                            <label>seq:</label><span>1</span>
+                            <div>
+                                <label>名称：</label>
+                                <input>
+                            </div>
+                            <div>
+                                <label>类型：</label>
+                                <input>
+                            </div>
+                            <div>
+                                <label>序列：</label>
+                                <input> 
+                            </div>                           
+                        </div>
+                        <div class="group-container-single">
+                            <label>seq:</label><span>2</span>
+                            <div>
+                                <label>名称：</label>
+                                <input>
+                            </div>
+                            <div>
+                                <label>类型：</label>
+                                <input>
+                            </div>
+                            <div>
+                                <label>序列：</label>
+                                <input> 
+                            </div>                           
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>back to my <a>main site</a> to check more</p>
+        </footer>
+    </body>
+</html>
