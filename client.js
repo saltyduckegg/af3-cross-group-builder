@@ -37,6 +37,9 @@ function GroupBoxConstructor(index, conpareGroupNum) {
     }
     this.Remove=function(){
         console.log('clickRemove--');
+        if (this.conpareGroupNum===1){
+            return 0
+        }
         this.removeConpareGroup()
         this.conpareGroupNum-- 
         refreshGroupWindow()   
@@ -83,6 +86,9 @@ addGroupBtnEl.addEventListener("click",function(){
 
 removeGroupBtnEl.addEventListener("click",function(){
   console.log('clickremove');
+  if (startGroupNum===1){
+    return 0 
+  }
   changeNumber(-1)
   groupList.pop()
   refreshGroupWindow()
